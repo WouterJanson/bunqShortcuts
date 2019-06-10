@@ -8,6 +8,11 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Bunq.Sdk" Version="1.1.0" />
+    <PackageReference Include="AspNet.Security.ApiKey.Providers" Version="1.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Auth\BasicAuthenticationHandler.cs" />
+  </ItemGroup>
 </Project>
